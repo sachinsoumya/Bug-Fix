@@ -3,6 +3,9 @@ import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-router-dom";
 import { ArrowRight, ArrowUpRight, Code2 } from "lucide-react";
 import HeroSection from "./HeroSection";
+import LeftSection from "./LeftSection";
+import SuperPower from "./SuperPower";
+// import Marquee from "react-fast-marquee";
 
 const technologies = ["React", "Redux", "Node.js", "Express", "MongoDB", "AWS"];
 
@@ -16,7 +19,11 @@ export const Home = () => {
           sequence={["We Build", 1000, "We Debug", 1000, "We Deploy", 1000]}
           wrapper="span"
           speed={50}
-          style={{ fontSize: "5em", display: "inline-block" , fontWeight:"bold" }}
+          style={{
+            fontSize: "5em",
+            display: "inline-block",
+            fontWeight: "bold",
+          }}
           repeat={Infinity}
         />
 
@@ -25,7 +32,7 @@ export const Home = () => {
 
           <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-5 py-20 sm:py-24 lg:grid-cols-2 lg:gap-12 lg:px-8 lg:py-28">
             {/* Left: content */}
-            <div>
+            {/* <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-lime-400/20 bg-lime-400/10 px-3 py-2">
                 <span className="h-2 w-2 animate-pulse rounded-full bg-lime-400" />
                 <span className="text-xs font-semibold tracking-wide text-lime-300 sm:text-sm">
@@ -66,7 +73,8 @@ export const Home = () => {
                 <Code2 size={20} className="text-lime-400" />
                 <p>Less drama. Better code. Fewer bugs.</p>
               </div>
-            </div>
+            </div> */}
+            <LeftSection />
 
             {/* Right: visual */}
             <HeroSection />
@@ -75,20 +83,25 @@ export const Home = () => {
 
         {/* Technology strip */}
         <section className="border-t border-white/10 bg-slate-900/60">
-          <div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-8 sm:px-8 lg:flex-row lg:items-center lg:justify-between">
-            <p className="text-xs font-bold tracking-[0.2em] text-slate-400">
+          <div className="mx-auto  max-w-7xl  px-5 py-8 sm:px-8 text-center">
+            <p className="text-2xl font-bold tracking-[0.2em] text-slate-400">
               OUR EVERYDAY SUPERPOWERS
             </p>
 
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+            <div>
+              {/* <Marquee> 
               {technologies.map((technology) => (
-                <span
-                  key={technology}
-                  className="text-sm font-semibold text-slate-200 transition hover:text-lime-400"
-                >
-                  {technology}
-                </span>
-              ))}
+                  <div
+                    key={technology}
+                    className="text-sm font-semibold text-slate-200 transition hover:text-lime-400"
+                  >
+                    {technology}
+                  </div>
+                ))} 
+              hello
+               </Marquee> */}
+
+              <SuperPower />
             </div>
           </div>
         </section>

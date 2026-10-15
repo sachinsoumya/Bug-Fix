@@ -1,5 +1,4 @@
-import React from "react";
-import { CircleCheck , Bug , GitBranch} from "lucide-react";
+import { CircleCheck, Bug, GitBranch } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -34,20 +33,20 @@ const HeroSection = () => {
 
             <div className="space-y-3 font-mono text-xs sm:text-sm">
               <div className="flex items-start gap-3">
-                <CircleCheck size={17} className="shrink-0 text-lime-400"  />
-               
+                <CircleCheck size={17} className="shrink-0 text-lime-400" />
+
                 <span className="text-slate-300">Bug identified and fixed</span>
               </div>
 
               <div className="flex items-start gap-3">
-                <CircleCheck size={17} className="shrink-0 text-lime-400"  />
+                <CircleCheck size={17} className="shrink-0 text-lime-400" />
                 <span className="text-slate-300">
                   Components rendered successfully
                 </span>
               </div>
 
               <div className="flex items-start gap-3">
-                <CircleCheck size={17} className="shrink-0 text-lime-400"  />
+                <CircleCheck size={17} className="shrink-0 text-lime-400" />
                 <span className="text-slate-300">Production build ready</span>
               </div>
             </div>
@@ -72,8 +71,7 @@ const HeroSection = () => {
         {/* Floating card */}
         <div className="absolute -bottom-5 -left-3 flex items-center gap-3 rounded-xl border border-white/10 bg-slate-800 p-3 shadow-xl sm:-left-7">
           <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-sky-400/10 text-sky-300">
-          <GitBranch size={22} />
-           
+            <GitBranch size={22} />
           </div>
 
           <div>
