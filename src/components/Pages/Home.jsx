@@ -1,13 +1,13 @@
 import { TypeAnimation } from "react-type-animation";
 
-import { Link } from "react-router-dom";
-import { ArrowRight, ArrowUpRight, Code2 } from "lucide-react";
+// import { Link } from "react-router-dom";
+// import { ArrowRight, ArrowUpRight, Code2 } from "lucide-react";
 import HeroSection from "./HeroSection";
 import LeftSection from "./LeftSection";
 import SuperPower from "./SuperPower";
 // import Marquee from "react-fast-marquee";
 
-const technologies = ["React", "Redux", "Node.js", "Express", "MongoDB", "AWS"];
+// const technologies = ["React", "Redux", "Node.js", "Express", "MongoDB", "AWS"];
 
 export const Home = () => {
   return (
@@ -84,25 +84,11 @@ export const Home = () => {
         {/* Technology strip */}
         <section className="border-t border-white/10 bg-slate-900/60">
           <div className="mx-auto  max-w-7xl  px-5 py-8 sm:px-8 text-center">
-            <p className="text-2xl font-bold tracking-[0.2em] text-slate-400">
+            <p className="text-2xl font-bold tracking-[0.2em] text-slate-400 py-7">
               OUR EVERYDAY SUPERPOWERS
             </p>
 
-            <div>
-              {/* <Marquee> 
-              {technologies.map((technology) => (
-                  <div
-                    key={technology}
-                    className="text-sm font-semibold text-slate-200 transition hover:text-lime-400"
-                  >
-                    {technology}
-                  </div>
-                ))} 
-              hello
-               </Marquee> */}
-
-              <SuperPower />
-            </div>
+            <SuperPower />
           </div>
         </section>
       </div>

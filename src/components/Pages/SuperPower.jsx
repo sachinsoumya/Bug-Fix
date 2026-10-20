@@ -1,18 +1,30 @@
 import packages from "react-fast-marquee";
 const Marquee = packages.default || packages;
 
-const technologies = ["React", "Redux", "Node.js", "Express", "MongoDB", "AWS"];
+const technologies = [
+  "React.js",
+  "Redux-ToolKit",
+  "Node.js",
+  "Express.js",
+  " Next.js",
+  "TypeScript",
+  "Tailwind CSS",
+  "React Query",
+  "JWT",
+  "Docker",
+  "MongoDB",
+  "AWS",
+  "Jest",
+];
 
 const SuperPower = () => {
   return (
     <div>
       <Marquee>
         {technologies.map((technology) => (
-          <div className="toast toast-top toast-start" key={technology}>
-            <div className="alert alert-info">
-              <span>{technology}</span>
-            </div>
-          </div>
+          <button className="btn btn-accent mx-2 font-bold text-black" key={technology}>
+            {technology}
+          </button>
         ))}
       </Marquee>
     </div>
