@@ -1,5 +1,11 @@
+import ServiceSection from "./ServiceSection";
+
 const Services = () => {
-  return <div>Services</div>;
+  return (
+    <div>
+      <ServiceSection />
+    </div>
+  );
 };
 
 export default Services;
