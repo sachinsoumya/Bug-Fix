@@ -6,6 +6,7 @@ import HeroSection from "./HeroSection";
 import LeftSection from "./LeftSection";
 import SuperPower from "./SuperPower";
 import ServiceSection from "./ServiceSection";
+import ProcessSection from "./ProcessSection";
 // import Marquee from "react-fast-marquee";
 
 // const technologies = ["React", "Redux", "Node.js", "Express", "MongoDB", "AWS"];
@@ -53,6 +54,10 @@ export const Home = () => {
 
         <section>
           <ServiceSection />
+        </section>
+
+        <section>
+          <ProcessSection />
         </section>
       </div>
     </div>
